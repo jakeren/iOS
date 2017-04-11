@@ -6,9 +6,9 @@ In most cases, you may have some default settings of your app or you want to cla
 
 Fortunately, You can put these stuffs in iphone's **Settings**!
 
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/demo.png" width="270" height="480" />
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/map.PNG" width="270" height="480" />
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/excel.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/demo.png" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/map.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/excel.PNG" width="270" height="480" />
 
 
 ## How
@@ -17,7 +17,7 @@ Open your project,
 - Under iOS, Resource > Settings Bundle
 - Name the file **Settings.bundle**
 
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/create.png" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/create.png" />
 
 
 The Settings bundle has the following structure:
@@ -29,18 +29,18 @@ Settings.bundle/
 ```
 Open Root.plist, you will see
 
- <img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/origin.png"/>
+ <img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/origin.png"/>
 
 
 Build and Run the App. Then go to the **Settings** on your iphone. Find your App down below.
 Here's the defulat of the seetings bundle.
 
- <img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/default.png" width="270" height="480" />
+ <img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/default.png" width="270" height="480" />
 
 ## Get Started
 OK, let's get started with our custom settings.
 
- <img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/demoSetting.PNG" width="270" height="480" />
+ <img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/demoSetting.PNG" width="270" height="480" />
 
 We have 3 Groups:
 - Group 1
@@ -65,7 +65,7 @@ We have 3 Groups:
   
 So, Root.plist will look like 
 
- <img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/RootPlist.png"/>
+ <img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/RootPlist.png"/>
  
 Down below **Preference Items**, you can add your [preferences](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html)
 
@@ -184,8 +184,8 @@ In this tutorail, there is **FooterText** in the last Group.
 - Identifier : choice_preferece
 - Default Value : A
 
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/Choice.PNG" width="270" height="480" />
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/Choice_detail.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/Choice.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/Choice_detail.PNG" width="270" height="480" />
 
 **You have to define your options here**
 
@@ -231,8 +231,8 @@ Add row > Values
 - Filename : Acknowledgements (your custom plist)
 - Title : Acknowledgements
 
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/Ack.PNG" width="270" height="480" />
-<img src="https://github.com/Weijay/READMEs/blob/master/SettingBundle/Ack_Detail.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/Ack.PNG" width="270" height="480" />
+<img src="https://github.com/Weijay/iOS/blob/master/SettingsBundle/resources/Ack_Detail.PNG" width="270" height="480" />
 
 You have to create a new File
 - [x] create a new File > "Acknowledgemet.plist"
