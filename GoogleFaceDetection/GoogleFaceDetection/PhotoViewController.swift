@@ -30,7 +30,7 @@ class PhotoViewController: UIViewController {
         
     }
 
-    @IBAction func faceRecognitionClicked(_ sender: UIButton) {
+    @IBAction func faceRecognitionClicked(_ sender: UIBarButtonItem) {
         for annotationView in self.overlay.subviews {
             annotationView.removeFromSuperview()
         }

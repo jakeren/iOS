@@ -10,6 +10,7 @@
 		023CF82C1E6D305200ED4A54 /* multi-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 023CF82B1E6D305200ED4A54 /* multi-face.png */; };
 		023CF82F1E6D308000ED4A54 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023CF82E1E6D308000ED4A54 /* PhotoViewController.swift */; };
 		0253F9CE1E697F0E00966EA4 /* DrawingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253F9CD1E697F0E00966EA4 /* DrawingUtility.swift */; };
+		027A23521E9CBD100075EE45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 027A23511E9CBD100075EE45 /* README.md */; };
 		027E87E41E6967D90057E1CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E87E31E6967D90057E1CA /* AppDelegate.swift */; };
 		027E87E61E6967D90057E1CA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E87E51E6967D90057E1CA /* CameraViewController.swift */; };
 		027E87E91E6967D90057E1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027E87E71E6967D90057E1CA /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		023CF82B1E6D305200ED4A54 /* multi-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "multi-face.png"; sourceTree = "<group>"; };
 		023CF82E1E6D308000ED4A54 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		0253F9CD1E697F0E00966EA4 /* DrawingUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingUtility.swift; sourceTree = "<group>"; };
+		027A23511E9CBD100075EE45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		027E87E01E6967D90057E1CA /* GoogleFaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleFaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027E87E31E6967D90057E1CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027E87E51E6967D90057E1CA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		027E87D71E6967D90057E1CA = {
 			isa = PBXGroup;
 			children = (
+				027A23511E9CBD100075EE45 /* README.md */,
 				027E87E21E6967D90057E1CA /* GoogleFaceDetection */,
 				027E87F71E6967D90057E1CA /* GoogleFaceDetectionTests */,
 				027E87E11E6967D90057E1CA /* Products */,
@@ -296,6 +299,7 @@
 			files = (
 				027E87E61E6967D90057E1CA /* CameraViewController.swift in Sources */,
 				023CF82F1E6D308000ED4A54 /* PhotoViewController.swift in Sources */,
+				027A23521E9CBD100075EE45 /* README.md in Sources */,
 				027E87E41E6967D90057E1CA /* AppDelegate.swift in Sources */,
 				0253F9CE1E697F0E00966EA4 /* DrawingUtility.swift in Sources */,
 			);

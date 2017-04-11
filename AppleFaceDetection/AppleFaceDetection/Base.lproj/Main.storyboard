@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BMf-15-yHf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera-->
+        <scene sceneID="5QB-Ha-Tp4">
+            <objects>
+                <viewController id="H7V-wZ-h5U" customClass="CameraViewController" customModule="AppleFaceDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Amp-Ay-0EI"/>
+                        <viewControllerLayoutGuide type="bottom" id="DPA-83-k5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f20-or-AMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryQ-nK-f0v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-P7-YBY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-yR-eoM">
+                                <rect key="frame" x="300" y="37" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="cameraDeviceChanged:" destination="H7V-wZ-h5U" eventType="valueChanged" id="YSu-rV-ZZV"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camera" image="Camera" id="d0T-nn-bcl"/>
+                    <connections>
+                        <outlet property="cameraSwitch" destination="R3o-yR-eoM" id="V4q-uy-UHj"/>
+                        <outlet property="overlay" destination="aFU-P7-YBY" id="zhE-54-DEH"/>
+                        <outlet property="placeholder" destination="ryQ-nK-f0v" id="iAj-dH-uXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywf-Ej-UUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="381.85907046476763"/>
+        </scene>
+        <!--Face Detection-->
+        <scene sceneID="Ubx-XD-Zru">
+            <objects>
+                <viewController id="hsz-8f-1Qh" customClass="PhotoViewController" customModule="AppleFaceDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyf-Z1-mYj"/>
+                        <viewControllerLayoutGuide type="bottom" id="RiH-Jf-dRl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mc5-qx-mld">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="multi-face.png" translatesAutoresizingMaskIntoConstraints="NO" id="tVu-Ub-fds">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yB2-Kt-skC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Face Detection" id="m8n-w4-J1l">
+                        <barButtonItem key="rightBarButtonItem" title="Detect" id="KH5-vJ-ijk">
+                            <connections>
+                                <action selector="faceRecognitionClicked:" destination="hsz-8f-1Qh" id="DTr-N9-s1N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="faceImageView" destination="tVu-Ub-fds" id="v8D-Zx-sLW"/>
+                        <outlet property="overlay" destination="yB2-Kt-skC" id="fwi-GI-fvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XK9-U9-Bxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-274.81259370314842"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iuJ-PD-mH0">
+            <objects>
+                <tabBarController id="BMf-15-yHf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="shs-WM-ZCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tYd-NQ-xut" kind="relationship" relationship="viewControllers" id="Qbq-qS-5ev"/>
+                        <segue destination="H7V-wZ-h5U" kind="relationship" relationship="viewControllers" id="hw3-3g-UMb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUc-5Z-xT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="51"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="j0c-lw-B1u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tYd-NQ-xut" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photo" image="Image" id="vlz-LW-Sqw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="doM-mf-pWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hsz-8f-1Qh" kind="relationship" relationship="rootViewController" id="1ke-XK-Fal"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypO-4o-twH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248.80000000000001" y="-274.81259370314842"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camera" width="36" height="36"/>
+        <image name="Image" width="36" height="36"/>
+        <image name="multi-face.png" width="414" height="414"/>
+    </resources>
+</document>
