@@ -1,4 +1,4 @@
-# GoogleFaceDetection
+# AppleFaceDetection
 #### This project build on iOS 10.2 in Swift 3.
 
 In iOS, to detect faces in a picture, you can use [CIDetector](https://developer.apple.com/reference/coreimage/cidetector) (Apple)
